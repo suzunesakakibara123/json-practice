@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return response.json();
     })
     .then(data => {
-      const tbody = document.querySelector('#productTable tbody');
+      const tbody = document.querySelector('#productTable');
       data.forEach(product => {
         const row = document.createElement('tr');
         const cells = [product.id, product.name, product.price, product.description];
